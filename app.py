@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import plotly.graph_objects as go
 
 st.set_page_config(page_title="Classifier Performance Dashboard", layout="wide")
 
@@ -25,25 +24,6 @@ with col2:
 
 # Detailed Results Section
 st.header("Detailed Model Performance")
-
-# Metrics comparison
-fig_metrics = go.Figure()
-
-models = detailed_models['Model']
-metrics = ['Positive_Precision', 'Positive_Recall', 'Negative_Precision', 'Negative_Recall']
-for metric in metrics:
-    fig_metrics.add_trace(go.Bar(
-        name=metric.replace('_', ' '),
-        x=models,
-        y=detailed_models[metric]
-    ))
-
-fig_metrics.update_layout(
-    title='Detailed Metrics Comparison',
-    barmode='group',
-    yaxis_range=[0.5, 1.0]
-)
-st.plotly_chart(fig_metrics, use_container_width=True)
 
 # Model Selection and Detailed View
 selected_model = st.selectbox('Select Model for Detailed View', detailed_models['Model'])
