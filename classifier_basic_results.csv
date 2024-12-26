@@ -1,0 +1,7 @@
+Classifier,Accuracy
+Logistic Regression,0.8833
+Multinomial Naive Bayes,0.8525
+Linear SVC,0.8801
+Random Forest,0.8487
+Gradient Boosting,0.8088
+XGBoost,0.8575

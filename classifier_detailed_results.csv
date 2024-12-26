@@ -1,0 +1,7 @@
+Model,Accuracy,Positive_Precision,Positive_Recall,Negative_Precision,Negative_Recall
+SVM,0.82,0.8,0.86,0.85,0.78
+DecisionTree,0.63,0.62,0.64,0.63,0.62
+NaiveBayes,0.62,0.61,0.66,0.64,0.59
+RandomForest,0.81,0.8,0.83,0.82,0.79
+Optimized,0.83,0.79,0.88,0.87,0.77
+Stacking,0.81,0.8,0.82,0.82,0.8
